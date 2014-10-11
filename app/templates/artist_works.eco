@@ -1,0 +1,22 @@
+<div>
+  <% for album in @albums: %>
+    <a class="album" href="<%= album.external_urls.spotify %>" target="_blank">
+
+      <div class="inneralbum">
+        <img src="" style="background-image: url('<%= if album.images.length > 0 then album.images[0].url else 'http://i.dailymail.co.uk/i/pix/2010/08/27/article-1306599-0AEC3259000005DC-640_634x469.jpg'%>')" />
+        <h2><%= album.name %></h2>
+      </div>
+<!-- 
+      <div class="albumartists">
+        <p>
+          <% for artist in album.artists: %>
+            <span><%= artist.name %></span>
+          <% end %>
+          - <%= album.release_date[0...4] %>
+        </p>
+      </div> -->
+      <!-- <iframe src="https://embed.spotify.com/?uri=<%= album.uri %>" width="640" height="80" frameborder="0" allowtransparency="true"></iframe> -->
+      <!-- <%= JSON.stringify(album.stats) %> -->
+    </a>
+  <% end %>
+</div>

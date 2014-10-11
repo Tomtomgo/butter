@@ -1,0 +1,10 @@
+<header>
+  <h2><a href="/">&laquo; butter?</a></h2>
+</header>
+<div id="artist_detail">
+</div>
+<div id="album_list">
+  <div id="loading">
+    <img src="/721.GIF" />
+  </div>
+</div>

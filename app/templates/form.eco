@@ -1,0 +1,11 @@
+<header>
+  <h1>Butter!</h1>
+
+  <div class="form">
+    <input autocomplete="off" placeholder="Enter an artist or composer..." type="text" id="query" value="" class="form-control" />
+  </div>
+</header>
+
+<div id="results">
+
+</div>

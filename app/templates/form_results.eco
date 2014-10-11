@@ -1,0 +1,7 @@
+<div id="artist_results">
+  <% for artist in @artists: %>
+    <a class="artisti" href="/compoz0r/<%= artist.id %>">
+      <img src="<%= if artist.images.length > 0 then artist.images[0].url else 'http://i.dailymail.co.uk/i/pix/2010/08/27/article-1306599-0AEC3259000005DC-640_634x469.jpg'%>" /><span><%= artist.name %></span>
+    </a>
+  <% end %>
+</div>
